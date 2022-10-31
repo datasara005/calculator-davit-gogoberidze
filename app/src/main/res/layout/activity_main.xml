@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sul"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:inputType="textPostalAddress"
+        android:textSize="40pt"
+        android:layout_gravity="right|center"
+        android:text="0"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="CLEAR">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/devide"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="/"
+                android:onClick="operatorEvent"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@color/darkgreen">
+
+            </TextView>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/n7"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:onClick="numberEvent"
+                android:background="@color/lightgreen"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:text="7">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n8"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="8"
+                android:textColor="@color/black"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n9"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="9"
+                android:textColor="@color/black"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/gam"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="*"
+                android:onClick="operatorEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/darkgreen">
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/n4"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:onClick="numberEvent"
+                android:background="@color/lightgreen"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="4">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n5"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="5"
+                android:textColor="@color/black"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n6"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:textColor="@color/black"
+                android:text="6"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/ga"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="-"
+                android:textSize="30dp"
+                android:onClick="operatorEvent"
+                android:gravity="center"
+                android:background="@color/darkgreen">
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/n1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:onClick="numberEvent"
+                android:background="@color/lightgreen"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="1">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n2"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="2"
+                android:textColor="@color/black"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n3"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="3"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/da"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="+"
+                android:textSize="30dp"
+                android:onClick="operatorEvent"
+                android:gravity="center"
+                android:background="@color/darkgreen">
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/we"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/gray"
+                android:textColor="@color/white"
+                android:onClick="numberEvent"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text=".">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/n0"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="0"
+                android:textColor="@color/black"
+                android:onClick="numberEvent"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@color/lightgreen">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/del"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="DEL"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/gray">
+
+            </TextView>
+            <TextView android:layout_weight="1"
+                android:id="@+id/to"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:text="="
+                android:textSize="30dp"
+                android:onClick="equalEvent"
+                android:gravity="center"
+                android:background="@color/green">
+
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
