@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
     var isNewOp = true
     var oldNumber = ""
     var op = "+"
-    val da = findViewById<TextView>(R.id.da)
-    val gam = findViewById<TextView>(R.id.gam)
-    val ga = findViewById<TextView>(R.id.ga)
-    val devide = findViewById<TextView>(R.id.devide)
+    private lateinit var da : TextView
+    private lateinit var gam : TextView
+    private lateinit var ga : TextView
+    private lateinit var dev : TextView
 
 
 
@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         resultTextView = findViewById(R.id.editText)
+        da = findViewById<TextView>(R.id.da)
+        gam = findViewById<TextView>(R.id.gam)
+        ga = findViewById<TextView>(R.id.ga)
+        dev = findViewById<TextView>(R.id.dev)
     }
     fun numberEvent(clickedView: View){
         if (clickedView is TextView){
@@ -53,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         when(number.id){
             da.id -> {op= "+"}
             gam.id -> {op= "*"}
-            devide.id -> {op= "/"}
+            dev.id -> {op= "/"}
             ga.id -> {op= "-"}
 
         }
